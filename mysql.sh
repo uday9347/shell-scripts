@@ -2,7 +2,7 @@
 
 ID = $(id -u)
 
-if [ ID -eq 0 ]
+if [ $ID -eq 0 ]
 then 
     yum install mysql 
     echo "the mysql is been installed "
