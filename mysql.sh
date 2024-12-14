@@ -5,13 +5,14 @@ ID=$(id -u)
 
 if [ $ID -eq 0 ]
 then 
-    yum install mysql 
-    echo "the mysql is been installed "
+    
+    echo "you are root user "
 else
     echo "please swicth run the cmd with root access"
     # exit 1
     
 fi
+dnf install mysql 
 
 if [ $? -ne 0 ]
 then 
