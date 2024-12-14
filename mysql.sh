@@ -9,7 +9,8 @@ then
     echo "you are root user "
 else
     echo "please swicth run the cmd with root access"
-    # exit 1
+    
+    exit 1
     
 fi
 dnf install mysql 
