@@ -9,7 +9,7 @@ then
     echo "the mysql is been installed "
 else
     echo "please swicth run the cmd with root access"
-    exit 1
+    # exit 1
     
 fi
 
