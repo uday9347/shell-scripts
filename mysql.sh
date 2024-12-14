@@ -13,28 +13,28 @@ else
     exit 1
     
 fi
-yum install mysql -y 
+yum install nginx -y 
 
 if [ $? -ne 0 ]
 then 
-    echo "mysql is fall to installed "
+    echo "nginx is fall to installed "
     
     exit 1
 
 else
-    echo "mysql installation is succesfull"
+    echo "nginx installation is succesfull"
 fi 
 
 yum install git -y 
 
-if [ $? -ne 0 ]
+if [ $? -ne 127 ]
 then 
-    echo "git is fall to installed "
+    echo "git is installed succesfully "
     
     exit 1
 
 else
-    echo "git installation is succesfull"
+    echo "git is already there amma"
 fi 
 
 
