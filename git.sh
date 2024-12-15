@@ -10,11 +10,11 @@ else
     echo "you are root user "
 fi 
 
-yum install git -y 
+yum install nginx -y 
 
 if [ $? -ne 0 ]
 then 
-    echo "git is failed to install "
+    echo "nginx is failed to install "
 else
-    echo "git installation is success "
+    echo "nginx installation is success "
 fi 
