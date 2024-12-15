@@ -1,6 +1,8 @@
 #!/bin/bash
 
 ID=$(id -u)
+DATE=$(date)
+LOGFILE="/tmp/$0-$DATE.log"
 
 VALIDATE()
 {
@@ -25,7 +27,7 @@ INP=$1
 
 echo "$INP"
 
-yum install $INP -y 
+yum install $INP -y &>> /tmp/$0-
 
 VALIDATE $? $INP
 
