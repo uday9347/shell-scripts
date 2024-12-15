@@ -27,7 +27,7 @@ INP=$1
 
 echo "$INP"
 
-yum install $INP -y &>> /tmp/LOGFILE
+yum install $INP -y &>> /tmp/$LOGFILE
 
 VALIDATE $? $INP
 
