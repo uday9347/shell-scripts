@@ -21,8 +21,10 @@ else
     echo "you are root user "
 fi 
 
-yum install nginxb -y 
+INP=$1
 
-VALIDATE $? "installing nginx"
+yum install $INP -y 
+
+VALIDATE $? $INP
 
 # yum install 
