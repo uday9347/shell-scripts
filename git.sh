@@ -23,6 +23,8 @@ fi
 
 INP=$1
 
+echo "$INP"
+
 yum install $INP -y 
 
 VALIDATE $? $INP
