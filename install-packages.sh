@@ -11,6 +11,7 @@ VALIDATE ()
         echo "the $2 is having failure "
     else
         echo "the $2 is success "
+    fi
 }
 
 ID=$(id -u)
@@ -31,3 +32,5 @@ do
         VALIDATE $? "installation of $i"
     else:
         echo "the $i is already installed "
+    fi 
+done
