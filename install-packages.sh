@@ -3,7 +3,7 @@
 
 
 TIME=$(date +%F-%H-%M-%S)
-LOGFILE=/tmp/$0-TIME.log
+LOGFILE="/tmp/$0-$TIME.log"
 VALIDATE ()
 {
     if [ $1 -ne 0 ]
