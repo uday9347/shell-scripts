@@ -26,10 +26,10 @@ fi
 for i in $@
 do 
     echo "$@"
-    yum list installed $i &>> LOGFILE
+    yum list installed $i &>>LOGFILE
     if [ $? -ne 0 ]
     then 
-        yum install $i -y &>> LOGFILE
+        yum install $i -y &>>LOGFILE
         VALIDATE $? "installation of $i"
     else
         echo "the $i is already installed "
