@@ -15,7 +15,7 @@ VALIDATE ()
 }
 
 ID=$(id -u)
-if [ $ID ne 0 ]
+if [ $ID -ne 0 ]
 then 
     echo "switch the user to root "
     exit 1
@@ -26,7 +26,7 @@ fi
 for i in $@
 do 
     yum list installed $i &>> LOGFILE
-    if [ $? ne 0 ]
+    if [ $? -ne 0 ]
     then 
         yum install $i -y &>> LOGFILE
         VALIDATE $? "installation of $i"
