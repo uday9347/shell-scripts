@@ -31,7 +31,7 @@ do
     then 
         yum install $i -y &>> LOGFILE
         VALIDATE $? "installation of $i"
-    else:
+    else
         echo "the $i is already installed "
     fi 
 done
