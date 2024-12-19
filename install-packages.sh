@@ -25,6 +25,7 @@ fi
 
 for i in $@
 do 
+    echo "$@"
     yum list installed $i &>> LOGFILE
     if [ $? -ne 0 ]
     then 
