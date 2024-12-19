@@ -6,7 +6,7 @@ TIME=$(date +%F-%H-%M-%S)
 LOGFILE=/tmp/$0-TIME.log
 VALIDATE ()
 {
-    if [ $1 ne 0 ]
+    if [ $1 -ne 0 ]
     then 
         echo "the $2 is having failure "
     else
